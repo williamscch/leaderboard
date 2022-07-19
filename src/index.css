@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.hero {
+  display: flex;
+  gap: 5rem;
+}
+
+.title-button {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  border: 1px solid black;
+}
+
+.list:nth-child(odd) {
+  background-color:aqua;
+}
+
+.list:nth-child(even) {
+  background-color: black;
+}
