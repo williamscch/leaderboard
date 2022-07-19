@@ -5,13 +5,13 @@
   text-decoration: none;
 }
 
-body{
-    min-height: 100vh;
+body {
+  min-height: 100vh;
 }
 
 h1 {
-    margin-top: 50px;
-    margin-left: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
 .hero {
@@ -23,25 +23,30 @@ h1 {
 }
 
 .table {
-    width: 30%;
+  width: 30%;
 }
 
 .title-button {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+form button {
+  width: 20%;
+  align-self: flex-end;
 }
 
 .title-button button {
-    width: 25%;
+  width: 25%;
 }
 
 .add-your-score {
-    width: 30%;
+  width: 30%;
 }
 
 .add-your-score h2 {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 form {
@@ -51,14 +56,9 @@ form {
 }
 
 form input {
-border: 1px solid black;
-height: 25px;
-padding: 2px;
-}
-
-form button {
-    width: 20%;
-    align-self: flex-end;
+  border: 1px solid black;
+  height: 25px;
+  padding: 2px;
 }
 
 .list {
