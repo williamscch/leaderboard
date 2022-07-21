@@ -17,7 +17,7 @@ body {
 h1 {
   font-family: "Press Start 2P", cursive;
   text-align: center;
-  padding-top:50px ;
+  padding-top: 50px;
 }
 
 .hero {
@@ -39,7 +39,7 @@ h1 {
 .title-button {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(rgba(255, 255, 255, 0),#3c0101, #390606);
+  background: linear-gradient(rgba(255, 255, 255, 0), #3c0101, #390606);
   width: 90%;
   height: 2rem;
   padding: 0 1rem;
@@ -77,11 +77,11 @@ li span {
 }
 
 .list li:nth-child(even) {
-  background:  linear-gradient(45deg,rgba(170, 140, 89, 255), #beb18a  );
+  background: linear-gradient(45deg, rgba(170, 140, 89, 255), #beb18a);
 }
 
 .list li:nth-child(odd) {
-  background:  linear-gradient(45deg,#11110f, #232323)
+  background: linear-gradient(45deg, #11110f, #232323);
 }
 
 .add-your-score {
@@ -90,6 +90,10 @@ li span {
 
 .add-your-score h2 {
   margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #11110f00, #1e2d36, #11110f00);
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
 }
 
 form {
@@ -98,16 +102,9 @@ form {
   gap: 1rem;
 }
 
-.add-your-score h2 {
- background:  linear-gradient(90deg,#11110f00, #1e2d36, #11110f00);
-  text-align: center;
-  text-shadow: 1px 1px 2px black;
-  width: 100%;
-}
-
 form label {
   text-align: center;
-  background:  linear-gradient(90deg,#11110f00, rgba(170, 140, 89, 255), #11110f00);
+  background: linear-gradient(90deg, #11110f00, rgba(170, 140, 89, 255), #11110f00);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +124,7 @@ form input::placeholder {
   color: #ffff;
 }
 
-form button {
+.form-button {
   width: 20%;
   height: 25px;
   align-self: flex-end;
@@ -141,12 +138,11 @@ form button {
 .score-added {
   font-size: 1.3rem;
   color: white;
-  background: linear-gradient(#11110f00,#3c0101, #11110f00);
+  background: linear-gradient(#11110f00, #3c0101, #11110f00);
   text-align: center;
 }
 
 @media (max-width: 768px) {
-
   .hero {
     flex-direction: column;
     align-items: center;
