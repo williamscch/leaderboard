@@ -3,15 +3,21 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  color: #ffff;
 }
 
 body {
   min-height: 100vh;
+  background-image: url("./bg-mk-leaderboard2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h1 {
-  margin-top: 50px;
-  margin-left: 30px;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .hero {
@@ -19,34 +25,75 @@ h1 {
   gap: 5rem;
   height: 100%;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 130px;
+  font-family: "Almendra", serif;
 }
 
 .table {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title-button {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-form button {
-  width: 20%;
-  align-self: flex-end;
+  background: linear-gradient(rgba(255, 255, 255, 0), #3c0101, #390606);
+  width: 90%;
+  height: 2rem;
+  padding: 0 1rem;
+  align-items: center;
 }
 
 .title-button button {
-  width: 25%;
+  width: 20%;
+  height: 70%;
+  background-color: rgba(82, 45, 117, 255);
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 1px 1px 2px black;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.list {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+li span {
+  font-size: 2rem;
+}
+
+.list li:nth-child(even) {
+  background: linear-gradient(45deg, rgba(170, 140, 89, 255), #beb18a);
+}
+
+.list li:nth-child(odd) {
+  background: linear-gradient(45deg, #11110f, #232323);
 }
 
 .add-your-score {
-  width: 30%;
+  width: 25%;
 }
 
 .add-your-score h2 {
   margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #11110f00, #1e2d36, #11110f00);
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
 }
 
 form {
@@ -55,16 +102,57 @@ form {
   gap: 1rem;
 }
 
-form input {
-  border: 1px solid black;
-  height: 25px;
-  padding: 2px;
-}
-
-.list {
-  border: 2px solid black;
+form label {
+  text-align: center;
+  background: linear-gradient(90deg, #11110f00, rgba(170, 140, 89, 255), #11110f00);
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 5px;
+  align-items: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+form input {
+  border: none;
+  height: 30px;
+  padding: 2px;
+  background-color: #455b2d7e;
+  width: 100%;
+  text-shadow: 1px 1px 2px black;
+}
+
+form input::placeholder {
+  color: #ffff;
+}
+
+.form-button {
+  width: 20%;
+  height: 25px;
+  align-self: flex-end;
+  background-color: rgba(82, 45, 117, 255);
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 1px 1px 2px black;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.score-added {
+  font-size: 1.3rem;
+  color: white;
+  background: linear-gradient(#11110f00, #3c0101, #11110f00);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table {
+    width: 80%;
+  }
+
+  .add-your-score {
+    width: 70%;
+  }
 }
