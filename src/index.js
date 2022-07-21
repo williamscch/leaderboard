@@ -57,8 +57,9 @@ form.addEventListener('submit', (e) => {
   const userName = document.querySelector('.user-name').value;
   const points = document.querySelector('.points').value;
   addNewScore(userName, points);
-  userName.value = null;
-  points.value = null;
+  form.reset();
+  // userName.value = null;
+  // points.value = null;
 });
 
 refresh.addEventListener('click', () => {
