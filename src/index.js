@@ -3,7 +3,7 @@ import './index.css';
 // import addNewScore from './addNewScore.js';
 // import displayBoardScreen from './displayBoardScreen.js';
 
-const path = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EWfiKQuijyVR2B4R0w9s/scores/';
+const path = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/sytEa9ZCBTFrGUK2FvcN/scores/';
 const list = document.getElementById('list');
 const refresh = document.querySelector('.refresh');
 const form = document.querySelector('form');
@@ -31,7 +31,7 @@ const displayBoardScreen = async () => {
 };
 
 const addNewScore = async (userName, points) => {
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EWfiKQuijyVR2B4R0w9s/scores/',
+  await fetch(path,
     {
       method: 'POST',
       headers: {
