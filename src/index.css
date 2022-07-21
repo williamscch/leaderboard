@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  color: #ffff;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
 
 h1 {
   font-family: "Press Start 2P", cursive;
-  color: #ffff;
   text-align: center;
   padding-top:50px ;
 }
@@ -27,7 +27,6 @@ h1 {
   justify-content: center;
   margin-top: 150px;
   font-family: "Almendra", serif;
-  color: #ffff;
 }
 
 .table {
@@ -51,7 +50,6 @@ h1 {
   width: 20%;
   height: 70%;
   background-color: rgba(82, 45, 117, 255);
-  color: #ffff;
   font-family: "Press Start 2P", cursive;
   text-shadow: 1px 1px 2px black;
   font-size: 0.6rem;
@@ -117,11 +115,10 @@ form label {
 }
 
 form input {
-  border: 1px solid black;
+  border: none;
   height: 30px;
   padding: 2px;
-  background-color: #455b2dbd;
-  color: #ffff;
+  background-color: #455b2d7e;
   width: 100%;
   text-shadow: 1px 1px 2px black;
 }
@@ -135,9 +132,15 @@ form button {
   height: 25px;
   align-self: flex-end;
   background-color: rgba(82, 45, 117, 255);
-  color: #ffff;
   font-family: "Press Start 2P", cursive;
   text-shadow: 1px 1px 2px black;
   font-size: 0.6rem;
   cursor: pointer;
+}
+
+.score-added {
+  font-size: 1.3rem;
+  color: white;
+  background: linear-gradient(#11110f00,#3c0101, #11110f00);
+  text-align: center;
 }

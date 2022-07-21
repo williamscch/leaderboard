@@ -2,8 +2,20 @@ import './index.css';
 
 const path = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EWfiKQuijyVR2B4R0w9s/scores/';
 const list = document.getElementById('list');
+const refresh = document.querySelector('.refresh');
+const form = document.querySelector('form');
 
-const renderLeaderboar = (data) => {
+const getGameScores = async () => {
+  const response = await fetch(path);
+  // console.log(response);
+  const data = await response.json();
+  data.result.sort((a, b) => b.score - a.score);
+  // console.log(data);
+  return data.result;
+};
+
+const renderLeaderboard = () => {
+  const data = getGameScores();
   data.result.forEach((e) => {
     const line = document.createElement('li');
     const userName = document.createElement('h4');
@@ -17,18 +29,8 @@ const renderLeaderboar = (data) => {
   });
 };
 
-const getGameScores = async () => {
-  const response = await fetch(path);
-  console.log(response);
-  const data = await response.json();
-  // data.result.splice(0, 1);
-  data.result.sort((a, b) => b.score - a.score);
-  console.log(data);
-  renderLeaderboar(data);
-};
-
 const addNewScore = async (userName, points) => {
-  const response = await fetch(path,
+  await fetch(path,
     {
       method: 'POST',
       headers: {
@@ -38,20 +40,26 @@ const addNewScore = async (userName, points) => {
         user: userName,
         score: points,
       }),
-    }).then((data) => data.json());
-
-  const data = await response.json();
+    }).then(() => {
+    const added = document.createElement('h5');
+    added.classList.add('score-added');
+    added.textContent = 'Your score has been added successfully! Click the refresh button to see it on the board';
+    form.appendChild(added);
+    setTimeout(() => {
+      added.remove();
+    }, 4000);
+  });
 };
-
-const form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const userName = document.querySelector('.user-name').value;
   const points = document.querySelector('.points').value;
   addNewScore(userName, points);
-  // userName.value = null;
-  // points.value = null;
+  userName.value = null;
+  points.value = null;
 });
 
-getGameScores();
+refresh.addEventListener('click', () => {
+  renderLeaderboard();
+});
