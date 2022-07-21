@@ -1,9 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome Books
+# MK LeaderBoard
 
-> In this project I build a page to save a list of your favorites books, you can add new books, delete it and they will be saved in the local storage of your browser so your list will be there even if you close the page.
-
+> In this project I build a LeaderBoard web app that displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## Built With
 
@@ -42,8 +41,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse Module 2
+- Microverse Module 2 APIs
 - Project indications [here](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/sneak_peek.md)
+- Based on Mortal Kombat game.
 
 ## 📝 License
 
