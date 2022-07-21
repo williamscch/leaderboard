@@ -146,6 +146,7 @@ form input::placeholder {
   h1 {
     font-size: 1.5rem;
   }
+
   .hero {
     flex-direction: column;
     align-items: center;
