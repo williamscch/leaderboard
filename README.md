@@ -16,7 +16,7 @@
 
 ## Live Demo (if available)
 
-[Leaderboard Link... Check it out!!!](https://wdavidcch.github.io/leaderboard/)
+[Leaderboard Link... Check it out!!!](https://wdavidcch.github.io/leaderboard/dist/)
 
 
 ## Getting Started
