@@ -14,7 +14,7 @@
 - ES6
 - Promises, async, await, fetch.
 
-## Live Demo (if available)
+## Live Demo
 
 [Leaderboard Link... Check it out!!!](https://wdavidcch.github.io/leaderboard/dist/)
 
