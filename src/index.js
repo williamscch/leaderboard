@@ -1,4 +1,7 @@
 import './index.css';
+// import { list, refresh, form } from './globalVariables.js';
+// import addNewScore from './addNewScore.js';
+// import displayBoardScreen from './displayBoardScreen.js';
 
 const path = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EWfiKQuijyVR2B4R0w9s/scores/';
 const list = document.getElementById('list');
@@ -7,15 +10,13 @@ const form = document.querySelector('form');
 
 const getGameScores = async () => {
   const response = await fetch(path);
-  // console.log(response);
   const data = await response.json();
   data.result.sort((a, b) => b.score - a.score);
-  // console.log(data);
-  return data.result;
+  return data;
 };
 
-const renderLeaderboard = () => {
-  const data = getGameScores();
+const displayBoardScreen = async () => {
+  const data = await getGameScores();
   data.result.forEach((e) => {
     const line = document.createElement('li');
     const userName = document.createElement('h4');
@@ -30,7 +31,7 @@ const renderLeaderboard = () => {
 };
 
 const addNewScore = async (userName, points) => {
-  await fetch(path,
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EWfiKQuijyVR2B4R0w9s/scores/',
     {
       method: 'POST',
       headers: {
@@ -47,7 +48,7 @@ const addNewScore = async (userName, points) => {
     form.appendChild(added);
     setTimeout(() => {
       added.remove();
-    }, 4000);
+    }, 5000);
   });
 };
 
@@ -61,5 +62,8 @@ form.addEventListener('submit', (e) => {
 });
 
 refresh.addEventListener('click', () => {
-  renderLeaderboard();
+  list.innerHTML = null;
+  displayBoardScreen();
 });
+
+displayBoardScreen();

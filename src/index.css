@@ -25,7 +25,7 @@ h1 {
   gap: 5rem;
   height: 100%;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 130px;
   font-family: "Almendra", serif;
 }
 
@@ -143,4 +143,20 @@ form button {
   color: white;
   background: linear-gradient(#11110f00,#3c0101, #11110f00);
   text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table {
+    width: 80%;
+  }
+
+  .add-your-score {
+    width: 70%;
+  }
 }
