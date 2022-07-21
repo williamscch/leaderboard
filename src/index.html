@@ -5,32 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@1,400;1,700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <title>Leaderboard</title>
+    <link rel="shortcut icon" href="./favicon-mk-leaderboard.png">
 </head>
 
 <body>
-    <h1>Leaderboard</h1>
+    <h1>LEADERBOARD</h1>
     <section class="hero">
         <div class="table">
             <div class="title-button">
                 <h2>Recent Scores</h2>
                 <button type="reset">Reset</button>
             </div>
-            <ul class="list">
-                <li>Name: 100</li>
-                <li>Name: 100</li>
-                <li>Name: 100</li>
-                <li>Name: 100</li>
-                <li>Name: 100</li>
-                <li>Name: 100</li>
-                <li>Name: 100</li>
-            </ul>
+            <ul class="list" id="list"></ul>
         </div>
         <div class="add-your-score">
             <h2>Add your Score</h2>
             <form>
-                <input type="text" required placeholder="Your Name">
-                <input type="number" required placeholder="Your Score">
+                <input type="text" class="user-name" required placeholder="Your Name">
+                <input type="number" class="points" required placeholder="Your Score">
                 <button type="submit">Submit</button>
             </form>
         </div>
