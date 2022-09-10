@@ -3,7 +3,7 @@ import './index.css';
 // import addNewScore from './addNewScore.js';
 // import displayBoardScreen from './displayBoardScreen.js';
 
-const path = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/sytEa9ZCBTFrGUK2FvcN/scores/';
+const path = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/nYsEAp8XlytWpR931JLX/scores/';
 const list = document.getElementById('list');
 const refresh = document.querySelector('.refresh');
 const form = document.querySelector('form');

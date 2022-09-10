@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # MK LeaderBoard
 
 > In this project I build a LeaderBoard web app that displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
@@ -18,6 +16,8 @@
 
 [Leaderboard Link... Check it out!!!](https://wdavidcch.github.io/leaderboard/dist/)
 
+## Quick view
+> ![](./mkleaderboardss.png)
 
 ## Getting Started
 

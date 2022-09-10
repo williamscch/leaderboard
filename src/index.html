@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@1,400;1,700&family=Press+Start+2P&display=swap"
         rel="stylesheet">
     <title>MK Leaderboard</title>
-    <link rel="shortcut icon" type="image/png" href="./favicon-mk-leaderboard.png">
+    <link rel="shortcut icon" type="image/png" href="./mkfavicon.ico">
 </head>
 
 <body>
@@ -28,10 +28,10 @@
             <h2>Add your Score</h2>
             <form>
                 <label>YOUR NAME
-                    <input type="text" class="user-name" required placeholder="Write your name here">
+                    <input type="text" class="user-name" maxlength="15" required placeholder="Write your name here">
                 </label>
                 <label>YOUR SCORE
-                    <input type="number" class="points" required placeholder="Write your score here">
+                    <input type="number" class="points" required min="0" max="100" placeholder="Write your score here... From 0 to 100">
                 </label>
                 <button type="submit" class="form-button">SUBMIT</button>
             </form>
