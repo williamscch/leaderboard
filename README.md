@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Leaderboard Link... Check it out!!!](https://wdavidcch.github.io/leaderboard/dist/)
+[Leaderboard Link... Check it out!!!](https://williamscch.github.io/leaderboard/dist/)
 
 ## Quick view
 > ![](./mkleaderboardss.png)
@@ -25,7 +25,7 @@ To get a local copy up and running follow the next steps: -Copy the SSH key of t
 
 ## 👤 Author
 
-- GitHub: [@wdavidcch](https://github.com/wdavidcch)
+- GitHub: [@williamscch](https://github.com/williamscch)
 - Twitter: [@wdavidcch](https://twitter.com/wdavidcch)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/williams-colmenares-989a6b151)
 
