@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Leaderboard Link... Check it out!!!](https://williamscch.github.io/leaderboard/dist/)
+[Leaderboard Link... Check it out!!!](https://leaderboardwilliamscch.netlify.app/)
 
 ## Quick view
 > ![](./mkleaderboardss.png)
